@@ -31,9 +31,9 @@ header {
     color: #3D6F9F;
   }
   
-  .nav-burger-icon{
+.nav-burger-icon{
     font-size: 1.8rem;
-  }
+}
 
 ul {
     list-style-type: none;
@@ -48,7 +48,7 @@ ul {
 }
 
 #myLinks li {
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 #myLinks {
@@ -205,3 +205,20 @@ footer a {
     color:#3D6F9F
 
 }
+
+@media only screen and (max-width: 767px) {
+    body {
+      background-color: lightblue;
+    }
+    .personal-projects {
+    grid-template-columns: 26.563rem;
+    grid-template-rows: 1.25rem 24.75rem 24.75rem 24.85rem 24.75rem;
+    grid-template-areas: 
+    "personal-project-header"
+    "contact-form"
+    "blackjack-game"
+    "weight-converter"
+    "rdx-landing-page"
+    }
+
+  }
