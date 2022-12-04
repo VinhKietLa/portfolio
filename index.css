@@ -205,11 +205,8 @@ footer a {
     color:#3D6F9F
 
 }
-
-@media only screen and (max-width: 767px) {
-    body {
-      background-color: lightblue;
-    }
+/*mobile device styles*/
+@media only screen and (max-width: 425px) {
     .personal-projects {
     grid-template-columns: 26.563rem;
     grid-template-rows: 1.25rem 24.75rem 24.75rem 24.85rem 24.75rem;
@@ -220,5 +217,29 @@ footer a {
     "weight-converter"
     "rdx-landing-page";
     }
-
+    body {
+        background-color: blue;
+    }
   }
+
+/*desktop devices*/
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .topnav {
+        position:static;
+        display: flex;
+    }
+    #myLinks {
+        display: inline-flex;
+    }
+    #myLinks ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: unset;
+        padding-left: 25rem;
+    }
+   
+    .topnav .nav-burger-icon {
+        display: none;
+    }
+}
