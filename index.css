@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+  }
+
+/*External Font*/
+font-face {
+    font-family: montserrat;
+    src: url("https://www.dropbox.com/s/i0dy0oea2dlz6s4/Montserrat-VariableFont.ttf?dl=0");
+}
+
+body {
+    font-family: montserrat;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*1 rem = 16px*/
+/*Top Navbar*/
+
+header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.topnav .nav-burger-icon {
+    display: block;
+    position: absolute;
+    right: 0.563rem;
+    top: 0.875rem;
+    color: #3D6F9F;
+  }
+  
+  .nav-burger-icon{
+    font-size: 1.8rem;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #myLinks ul {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#myLinks li {
+    padding-right: 10px;
+}
+
+#myLinks {
+    display: none;
+}
+
+#myLinks a, .logo {
+    color:#3D6F9F;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+/*Hero image and contact styles*/
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background-color: #D9D9D9;
+    color: #393F3C;
+}
+
+.contact-me-btn {
+    margin-bottom: 10px;
+    color:#3D6F9F;
+    border:solid 0.01rem #3D6F9F;
+    background-color: #D9D9D9;
+    height: 2rem;
+    width: 9rem;
+    border-radius: 0.5rem;
+}
+
+.hero-text, p {
+    margin-top: 0rem;
+}
+
+/*About Me styles*/
+
+.about-me {
+    text-align: center;
+    border-bottom: 0.1rem solid #d2d2d2;
+}
+
+.about-me h2, .skillset-header, .projects-header {
+    color: #3D6F9F;
+}
+
+.about-me p {
+    color: #393F3C;
+}
+
+/*My skillset styles*/
+
+.my-skillsets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 6.25rem 12.625rem;
+    grid-template-areas:
+    "skillset-header skillset-header skillset-header"
+    "coding-skills designer-skills technical-support";
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    border-bottom: 0.1rem solid #d2d2d2;
+}
+
+.skillset-header {
+    grid-area: skillset-header;
+}
+.coding-skills {
+    grid-area: coding-skills;
+}
+
+.designer-skills {
+    grid-area: designer-skills;
+}
+
+.technical-support {
+    grid-area: technical-support;
+}
+
+.code-icon, .graphic-designer, .technical-image {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.my-skillsets li {
+    color: #393F3C;
+}
+
+/*Personal project styles*/
+
+.contact-form, .blackjack-game, .weight-converter, 
+.rdx-landing-page, .coming-soon {
+    width: 22.5rem;
+    height: 18.75rem;
+}
+
+.personal-projects {
+    display:grid;
+    justify-items: center;
+    align-self: center;
+    gap: 0.625rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6.25rem 24.75rem 24.75rem;
+    grid-template-areas: 
+    "personal-project-header personal-project-header"
+    "contact-form blackjack-game"
+    "weight-converter rdx-landing-page";
+    text-align: center;
+}
+
+.projects-header {
+    grid-area: personal-project-header;
+}
+
+.contact-form {
+    grid-area: contact-form;
+}
+
+.blackjack-game {
+    grid-area: blackjack-game;
+}
+
+.weight-converter {
+    grid-area: weight-converter;
+}
+
+.rdx-landing-page {
+    grid-area: rdx-landing-page;
+}
+.personal-projects h4 {
+    color: #393F3C;
+}
+
+/*Footer styles*/
+
+footer {
+    margin-top: 30px;
+    background-color: #D9D9D9;
+    height: 40px;
+}
+footer p {
+text-align: center;
+padding-top: 10px;    
+padding-right: 10px;
+}
+
+footer a {
+    color:#3D6F9F
+
+}
