@@ -3,11 +3,10 @@
 }
 
 /*External Font*/
-font-face {
+@font-face {
     font-family: montserrat;
-    src: url("https://www.dropbox.com/s/i0dy0oea2dlz6s4/Montserrat-VariableFont.ttf?dl=0");
+    src: url("https://dl.dropboxusercontent.com/s/ure5v95dxirfy79/Montserrat-VariableFont.woff2") format('woff2');
 }
-
 body {
     font-family: montserrat;
     margin: 0px;
@@ -249,6 +248,11 @@ footer a {
 
 /*desktop devices*/
 @media only screen and (min-width: 800px) and (max-width: 1920px) {
+    body {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
     .topnav {
         position: static;
         display: flex;
@@ -277,6 +281,10 @@ footer a {
 
 /*desktop extra large screens*/
 @media only screen and (min-width: 1920px) and (max-width: 3840px) {
+    body {
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
 
     .topnav {
         position: static;
