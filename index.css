@@ -12,7 +12,7 @@ body {
     font-family: montserrat;
     margin: 0px;
     padding: 0px;
-    max-width: 1920px;
+    /* max-width: 1920px; */
 }
 
 /*1 rem = 16px*/
@@ -163,8 +163,6 @@ ul {
     text-align: center;
     justify-items: center;
     align-items:flex-end;
-    border-bottom: 0.1rem solid red;
-
 }
 
 .projects-header {
@@ -247,7 +245,33 @@ footer a {
         flex-direction: row;
         justify-content: center;
         align-items: unset;
-        /* padding-left: 13rem; */
+        align-items: flex-end;
+    }
+   
+    .topnav .nav-burger-icon {
+        display: none;
+    }
+
+    .logo {
+        flex-grow: 2;
+    }
+}
+
+/*desktop extra large screens*/
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+    
+    .topnav {
+        position:static;
+        display: flex;
+    }
+    #myLinks {
+        display: inline-flex;
+    }
+    #myLinks ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: unset;
         align-items: flex-end;
     }
    
@@ -259,4 +283,21 @@ footer a {
     .logo {
         flex-grow: 2;
     }
-}
+
+    .personal-projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4.25rem 25.75rem 25.85rem;
+        grid-template-areas: 
+        "personal-project-header personal-project-header"
+        "contact-form contact form"
+        "blackjack-game blackjack-game""
+        "weight-converter weight-converter"
+        "rdx-landing-page rdx-landing-page";
+        }
+
+    html {
+        max-width: 3810px;;
+    }
+
+    }
+
