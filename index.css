@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
 
 /*External Font*/
 font-face {
@@ -30,9 +30,9 @@ header {
     right: 0.563rem;
     top: 0.875rem;
     color: #3D6F9F;
-  }
-  
-.nav-burger-icon{
+}
+
+.nav-burger-icon {
     font-size: 1.8rem;
 }
 
@@ -40,10 +40,10 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  #myLinks ul {
-    display:flex;
+#myLinks ul {
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
@@ -56,8 +56,9 @@ ul {
     display: none;
 }
 
-#myLinks a, .logo {
-    color:#3D6F9F;
+#myLinks a,
+.logo {
+    color: #3D6F9F;
     text-decoration: none;
     font-size: 1.6rem;
 }
@@ -78,15 +79,16 @@ ul {
 
 .contact-me-btn {
     margin-bottom: 10px;
-    color:#3D6F9F;
-    border:solid 0.01rem #3D6F9F;
+    color: #3D6F9F;
+    border: solid 0.01rem #3D6F9F;
     background-color: #D9D9D9;
     height: 2rem;
     width: 9rem;
     border-radius: 0.5rem;
 }
 
-.hero-text, p {
+.hero-text,
+p {
     margin-top: 0rem;
 }
 
@@ -97,7 +99,9 @@ ul {
     border-bottom: 0.1rem solid #d2d2d2;
 }
 
-.about-me h2, .skillset-header, .projects-header {
+.about-me h2,
+.skillset-header,
+.projects-header {
     color: #3D6F9F;
 }
 
@@ -112,8 +116,8 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 6.25rem 12.625rem;
     grid-template-areas:
-    "skillset-header skillset-header skillset-header"
-    "coding-skills designer-skills technical-support";
+        "skillset-header skillset-header skillset-header"
+        "coding-skills designer-skills technical-support";
     justify-items: center;
     text-align: center;
     border-bottom: 0.1rem solid #d2d2d2;
@@ -122,6 +126,7 @@ ul {
 .skillset-header {
     grid-area: skillset-header;
 }
+
 .coding-skills {
     grid-area: coding-skills;
 }
@@ -134,7 +139,9 @@ ul {
     grid-area: technical-support;
 }
 
-.code-icon, .graphic-designer, .technical-image {
+.code-icon,
+.graphic-designer,
+.technical-image {
     width: 3.125rem;
     height: 3.125rem;
 }
@@ -145,24 +152,26 @@ ul {
 
 /*Personal project styles*/
 
-.contact-form-img, .blackjack-game-img, .weight-converter-img, 
+.contact-form-img,
+.blackjack-game-img,
+.weight-converter-img,
 .rdx-landing-page-img {
     width: 100%;
     height: 18.75rem;
 }
 
 .personal-projects {
-    display:grid;
+    display: grid;
     gap: 0.625rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 6.25rem 24.75rem 24.75rem;
-    grid-template-areas: 
-    "personal-project-header personal-project-header"
-    "contact-form blackjack-game"
-    "weight-converter rdx-landing-page";
+    grid-template-areas:
+        "personal-project-header personal-project-header"
+        "contact-form blackjack-game"
+        "weight-converter rdx-landing-page";
     text-align: center;
     justify-items: center;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 .projects-header {
@@ -184,6 +193,7 @@ ul {
 .rdx-landing-page {
     grid-area: rdx-landing-page;
 }
+
 .personal-projects h4 {
     color: #393F3C;
 }
@@ -195,51 +205,54 @@ footer {
     background-color: #D9D9D9;
     height: 40px;
 }
+
 footer p {
-text-align: center;
-padding-top: 10px;    
-padding-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 footer a {
-    color:#3D6F9F
-
+    color: #3D6F9F
 }
+
 /*mobile device styles*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-   
-/*My skillset styles*/
+
+    /*My skillset styles*/
     .my-skillsets {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6.25rem 10.625rem 10rem;
-    grid-template-areas:
-    "skillset-header skillset-header"
-    "coding-skills designer-skills" 
-    "technical-support technical-support";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 6.25rem 10.625rem 10rem;
+        grid-template-areas:
+            "skillset-header skillset-header"
+            "coding-skills designer-skills"
+            "technical-support technical-support";
     }
-    
-/*personal projects section*/   
+
+    /*personal projects section*/
     .personal-projects {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.25rem 24.75rem 24.75rem 24.85rem 24.75rem;
-    grid-template-areas: 
-    "personal-project-header"
-    "contact-form"
-    "blackjack-game"
-    "weight-converter"
-    "rdx-landing-page";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.25rem 24.75rem 24.75rem 24.85rem 24.75rem;
+        grid-template-areas:
+            "personal-project-header"
+            "contact-form"
+            "blackjack-game"
+            "weight-converter"
+            "rdx-landing-page";
     }
-  }
+}
 
 /*desktop devices*/
-  @media only screen and (min-width: 800px) and (max-width: 1920px) {
+@media only screen and (min-width: 800px) and (max-width: 1920px) {
     .topnav {
-        position:static;
+        position: static;
         display: flex;
     }
+
     #myLinks {
         display: inline-flex;
     }
+
     #myLinks ul {
         display: flex;
         flex-direction: row;
@@ -247,7 +260,7 @@ footer a {
         align-items: unset;
         align-items: flex-end;
     }
-   
+
     .topnav .nav-burger-icon {
         display: none;
     }
@@ -259,14 +272,16 @@ footer a {
 
 /*desktop extra large screens*/
 @media only screen and (min-width: 1920px) and (max-width: 3840px) {
-    
+
     .topnav {
-        position:static;
+        position: static;
         display: flex;
     }
+
     #myLinks {
         display: inline-flex;
     }
+
     #myLinks ul {
         display: flex;
         flex-direction: row;
@@ -274,7 +289,7 @@ footer a {
         align-items: unset;
         align-items: flex-end;
     }
-   
+
     .topnav .nav-burger-icon {
         display: none;
         width: 100%;
@@ -287,17 +302,17 @@ footer a {
     .personal-projects {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 4.25rem 25.75rem 25.85rem;
-        grid-template-areas: 
-        "personal-project-header personal-project-header"
-        "contact-form contact form"
-        "blackjack-game blackjack-game""
-        "weight-converter weight-converter"
-        "rdx-landing-page rdx-landing-page";
-        }
+        grid-template-areas:
+            "personal-project-header personal-project-header"
+            "contact-form contact form"
+            "blackjack-game blackjack-game" "
+ "weight-converter weight-converter"
+            "rdx-landing-page rdx-landing-page";
+    }
 
     html {
-        max-width: 3810px;;
+        max-width: 3810px;
+        ;
     }
 
-    }
-
+}
