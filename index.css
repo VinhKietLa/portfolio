@@ -178,24 +178,48 @@ p {
 
 .contact-form {
     grid-area: contact-form;
+    position: relative;
 }
 
 .blackjack-game {
     grid-area: blackjack-game;
+    position: relative;
 }
 
 .weight-converter {
     grid-area: weight-converter;
+    position: relative;
 }
 
 .rdx-landing-page {
     grid-area: rdx-landing-page;
+    position: relative;
 }
 
-.personal-projects h4 {
-    color: #393F3C;
-}
+/*Personal projects h4 title overlay*/
+.overlay {
+    position: absolute;
+    top: 6.5rem;
+    right:6.5rem;
+    background: rgb(0, 0, 0);
+    color: #f1f1f1;
+    /* transition: .5s ease; */
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+} 
+  
+  /* When you mouse over the container, fade in the overlay title */
+  /* .contact-form:hover .overlay,  .blackjack-game:hover .overlay,
+  .weight-converter:hover .overlay, .rdx-landing-page:hover .overlay{
+    opacity: 1;
+  }   */
 
+a:hover img {
+    transform: scale(1.2);
+}
+ 
 /*Footer styles*/
 
 footer {
@@ -248,9 +272,9 @@ footer a {
 
 /*desktop devices*/
 @media only screen and (min-width: 800px) and (max-width: 1920px) {
-    body {
-        margin-left: 10rem;
-        margin-right: 10rem;
+    main {
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 
     .topnav {
@@ -281,9 +305,9 @@ footer a {
 
 /*desktop extra large screens*/
 @media only screen and (min-width: 1920px) and (max-width: 3840px) {
-    body {
-        margin-left: 30rem;
-        margin-right: 30rem;
+    main {
+        padding-left: 35rem;
+        padding-right: 35rem;
     }
 
     .topnav {
