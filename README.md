@@ -4,7 +4,15 @@
 
 This is my first iteration of my portfolio website to showcase my projects.
 
+
+### Preview
+
 [Visit-here][https://vinhkietla.github.io/portfolio/]
+
+
+![Screenshot of portfolio page](./images/readmess.png)
+
+
 
 ### How was it created?
 
